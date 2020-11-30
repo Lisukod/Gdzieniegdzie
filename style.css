@@ -1,0 +1,84 @@
+body {
+    background-color: navy;
+    background-image: linear-gradient(170deg, #580055, #12024E);
+    min-height: 100vh;
+    color: white;
+}
+
+.outer-container {
+    padding: 40px 80px;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-name{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    margin: 15px 30px 0 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.nobold{
+    font-weight: normal;
+}
+
+.menu{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+    margin-top: -10px;
+}
+
+.menu > li {
+    float: left;
+    border-top: none;
+    width: 180px;
+}
+
+.menu li {
+    position: relative;
+    padding: 0;
+}
+
+li {
+    line-height: 1.7;
+    display: inline;
+    margin-left: 35px;
+}
+
+main{
+    margin-top: 15vh;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.title-2nd-word{
+    font-weight: 450;
+    font-style: normal;
+}
+
+.video-screen{
+    
+}
+
+.video-buttons{
+    text-align: center;
+
+}
+
+footer{
+    margin-top: 150px;
+}
