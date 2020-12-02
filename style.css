@@ -19,7 +19,7 @@ a {
 }
 
 .outer-container {
-  padding: 40px 80px;
+  padding: 20px 60px;
 }
 
 header {
@@ -57,17 +57,15 @@ header {
   margin: .4rem 0 .8rem .8rem;
 }
 
-.menu > li {
-  position: relative;
-  padding: 0;
-  float: left;
-  border-top: none;
-  width: 180px;
+.menu > ul > li {
+  display: inline;
+  line-height: 1.7;
+  margin-left: 2.5rem;
 }
 
-li {
-  line-height: 1.7;
+.menu > ul > span > li {
   display: inline;
+  line-height: 1.7;
   margin-left: 2.5rem;
 }
 
@@ -115,6 +113,63 @@ main {
   background-color: orange;
 }
 
+.logo-OMN {
+  display: inline-block;
+  min-height: 78px;
+  min-width: 364px;
+  margin-top: 8rem;
+}
+
+.contact-info-box {
+  display: inline-block;
+  margin-left: 2rem;
+  float: right;
+  margin-top: 7.5rem;
+}
+
+.contact-info-box .info-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-info-box .info-top > span {
+  float: right;
+}
+
+.contact-info-box .info-contact {
+  display: inline-block;
+}
+
+.contact-info-box .info-contact ul {
+  list-style-type: none;
+  line-height: .8rem;
+  margin: .6rem 1rem 0 0;
+}
+
+.contact-info-box .project-author {
+  float: right;
+  margin-top: .6rem;
+  font-size: 1.6vh;
+}
+
 footer {
-  margin-top: 150px;
+  background-color: white;
+  margin-top: 4rem;
+  padding: 2rem 0 2rem 0;
+}
+
+footer .partners {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  padding-top: 20px;
+}
+
+footer .partners > div {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 35px;
+  vertical-align: middle;
 }
