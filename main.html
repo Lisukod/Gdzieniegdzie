@@ -35,13 +35,20 @@
         </header>
         <main>
             <h1>Gdzieniegdzie <span class="title-2nd-word">online</span></h1>
-            <video class="video-screen" autoplay>
+            <div class="black-box" id="black_box"></div>
+            <video class="video-screen video-hidden" id="video_01" preload="auto">
+                <source src="./wetransfer-5383a9/gng01_probne.mp4" type="video/mp4">
+            </video>
+            <video class="video-screen video-hidden" id="video_02" preload="auto">
                 <source src="./wetransfer-5383a9/gng02_probne.mp4" type="video/mp4">
             </video>
+            <video class="video-screen video-hidden" id="video_03" preload="auto">
+                <source src="./wetransfer-5383a9/gng03_probne.mp4" type="video/mp4">
+            </video>
             <div class="video-buttons col-10">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+                <button onclick="playVid(vid_01)">1</button>
+                <button onclick="playVid(vid_02)">2</button>
+                <button onclick="playVid(vid_03)">3</button>
                 <button>4</button>
                 <button>5</button>
                 <button>6</button>
@@ -105,5 +112,6 @@
             </div>
         </div>
     </footer>
+    <script src="video_app.js"></script>
 </body>
 </html>
