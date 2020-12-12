@@ -35,16 +35,18 @@
         </header>
         <main>
             <h1>Gdzieniegdzie <span class="title-2nd-word">online</span></h1>
-            <div class="black-box" id="black_box"></div>
-            <video class="video-screen video-hidden" id="video_01" preload="auto">
-                <source src="./wetransfer-5383a9/gng01_probne.mp4" type="video/mp4">
-            </video>
-            <video class="video-screen video-hidden" id="video_02" preload="auto">
-                <source src="./wetransfer-5383a9/gng02_probne.mp4" type="video/mp4">
-            </video>
-            <video class="video-screen video-hidden" id="video_03" preload="auto">
-                <source src="./wetransfer-5383a9/gng03_probne.mp4" type="video/mp4">
-            </video>
+            <div class="video-box"> 
+                <div class="black-box" id="black_box"></div>
+                <video class="video-screen video-hidden" id="video_01" preload="auto" loop>
+                    <source src="./wetransfer-5383a9/gng01_probne.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_02" preload="auto" loop>
+                    <source src="./wetransfer-5383a9/gng02_probne.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_03" preload="auto" loop>
+                    <source src="./wetransfer-5383a9/gng03_probne.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="video-buttons col-10">
                 <button onclick="playVid(vid_01)">1</button>
                 <button onclick="playVid(vid_02)">2</button>
@@ -96,19 +98,19 @@
     <footer>
         <div class="partners">
             <div>
-                <img src="./logo nck.png" alt="Narodowe centrum kultury" class="logo-NCK">
+                <img src="./media/logo nck.png" alt="Narodowe centrum kultury" class="logo-NCK">
             </div>
             <div>
-                <img src="./pic61.jpg" alt="Dofinansowane ze środków Narodowego Centrum Kultury w ramach programu Kultura w sieci">
+                <img src="./media/pic61.jpg" alt="Dofinansowane ze środków Narodowego Centrum Kultury w ramach programu Kultura w sieci">
             </div>
             <div>
-                <img src="./Group 133.png" alt="Ministerstwo Kulturu i Dziedzictwa Narodowego">
+                <img src="./media/Group 133.png" alt="Ministerstwo Kulturu i Dziedzictwa Narodowego">
             </div>
             <div>
-                <img src="./nospr11a.png" alt="NOSPR">
+                <img src="./media/nospr11a.png" alt="NOSPR">
             </div>
             <div>
-                <img src="./Group 134.png" alt="Instytut muzyki i tańca">
+                <img src="./media/Group 134.png" alt="Instytut muzyki i tańca">
             </div>
         </div>
     </footer>

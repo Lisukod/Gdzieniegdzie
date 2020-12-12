@@ -103,6 +103,11 @@ main {
   margin-bottom: 2rem;
 }
 
+.video-box {
+  display: block;
+  margin: 0 auto;
+}
+
 .video-hidden {
   display: none;
 }
