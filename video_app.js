@@ -32,7 +32,7 @@ function playVid(video_id) {
             // video_id.pause();
             }
     } else {
-        // video_id.currentTime = 0
+        video_id.currentTime = 0
         video_id.play();
         video_id.volume = 0;
         now_playing.classList.toggle("video-hidden")
