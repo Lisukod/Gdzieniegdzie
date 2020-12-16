@@ -1,6 +1,9 @@
 const vid_01 = document.getElementById("video_01");
 const vid_02 = document.getElementById("video_02");
 const vid_03 = document.getElementById("video_03");
+const vid_04 = document.getElementById("video_04");
+const vid_05 = document.getElementById("video_05");
+const vid_06 = document.getElementById("video_06");
 let now_playing
 
 // let fadeout = setInterval(
@@ -26,7 +29,7 @@ function playVid(video_id) {
             video_id.currentTime = 0
             video_id.play();
         } else {
-            video_id.pause();
+            // video_id.pause();
             }
     } else {
         // video_id.currentTime = 0
@@ -52,5 +55,21 @@ function playVid(video_id) {
             }, 25);
         console.log("zatrzymany")
         
+    }
+}
+
+function stopVid() {
+    if (typeof(now_playing) == "undefined"){
+        return
+    } else {
+        now_playing.pause()
+    }
+}
+
+function continueVid() {
+    if (typeof(now_playing) == "undefined"){
+        return
+    } else {
+        now_playing.play()
     }
 }
