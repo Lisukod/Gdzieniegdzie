@@ -87,19 +87,34 @@ main {
   font-style: normal;
 }
 
-.video-screen {
-  display: block;
-  margin: 2rem auto;
-  margin-bottom: 2rem;
-  max-height: 60vh;
-  min-width: 1500px;
-}
-
 .video-box {
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: 95vh;
 }
+
+.video-screen {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  transform: translateX(-24%);
+  /* max-width: 100%; */
+}
+
+@media screen and (max-width: 1480px) {
+  .video-screen {
+    width: 180%;
+    transform: translateX(-20%);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .video-screen {
+    width: 160%;
+    transform: translateX(-20%);
+  }
+}
+
 
 .black-box {
   background-color: black;
@@ -132,7 +147,31 @@ main {
 }
 
 .video-buttons > button:hover {
-  background-color: orange;
+  border-width: 2px;
+}
+
+.video-buttons > button:hover:nth-child(1) {
+  border-color: purple;
+}
+
+.video-buttons > button:hover:nth-child(2) {
+  border-color: green;
+}
+
+.video-buttons > button:hover:nth-child(3) {
+  border-color: red;
+}
+
+.video-buttons > button:hover:nth-child(4) {
+  border-color: yellow;
+}
+
+.video-buttons > button:hover:nth-child(5) {
+  border-color: blue;
+}
+
+.video-buttons > button:hover:nth-child(6) {
+  border-color: greenyellow;
 }
 
 .logo-OMN {
@@ -145,7 +184,6 @@ main {
 .contact-info-box {
   display: inline-block;
   margin-left: 2rem;
-  float: right;
   margin-top: 7.5rem;
 }
 
@@ -153,10 +191,6 @@ main {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.contact-info-box .info-top > span {
-  float: right;
 }
 
 .contact-info-box .info-contact {
@@ -172,7 +206,18 @@ main {
 .contact-info-box .project-author {
   float: right;
   margin-top: .6rem;
-  font-size: 1.6vh;
+  font-size: .7rem;
+}
+
+@media screen and (max-width: 940px) {
+  .contact-info-box .project-author {
+    float: left;
+  }
+
+}
+
+.logo-OMN + .contact-info-box {
+  margin-left: 10px + (1rem * 70%);
 }
 
 footer {
