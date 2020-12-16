@@ -1,12 +1,36 @@
-const vid_01 = document.getElementById("video_01");
-const vid_02 = document.getElementById("video_02");
-const vid_03 = document.getElementById("video_03");
-const vid_04 = document.getElementById("video_04");
-const vid_05 = document.getElementById("video_05");
-const vid_06 = document.getElementById("video_06");
-let now_playing
+const vids = [
+    document.getElementById("video_01"),
+    document.getElementById("video_02"),
+    document.getElementById("video_03"),
+    document.getElementById("video_04"),
+    document.getElementById("video_05"),
+    document.getElementById("video_06")
+]
 
+let now_playing
+let vids_loaded = false
+
+function isLoaded() {
+    let videoLoad = setInterval(
+        function(){
+            for (let i = 0; i < vids.length; i++) {
+                if (vids[i] == 4) {
+                    continue
+                } else {
+                    i--
+                }
+            }
+            vids_loaded = true;
+        }
+    , 250)
+    clearInterval(videoLoad)
+}
+
+// isLoaded()
 function playVid(video_id) {
+    if (vids_loaded == false){
+        isLoaded()
+    }
     if (typeof(now_playing) == "undefined") {
         document.getElementById("black_box").classList.add("video-hidden")
         now_playing = video_id
