@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gdzieniegdzie WIP</title>
+</head>
+<body>
+    <div class="outer-container">
+        <header>
+            <div class="header-left">
+                <img src="./media/Path 211.png" alt="Logo">
+                <div class="project-name">"Witrualny Ogród Muzyki Nowej"
+                    <span class="nobold">- OMN NET</span>
+                </div>        
+            </div>
+            <nav class="menu">
+                <ul>    
+                    <li>
+                        <a href="http://serwisy.3w.gliwice.pl/dziuma/brog/news/wirtualny-ogrod-muzyki-nowej">
+                            <span>O projekcie</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://serwisy.3w.gliwice.pl/dziuma/brog/news/kontakt">
+                            <span>Kontakt</span>
+                       </a>
+                    </li>
+                    <span class="social-links-menu">
+                        <li><a class="social-link-menu" href="https://www.facebook.com/ensembleOMN/" target="_new">
+                            <img src="./media/Component 21 – 61.png" alt="FB">
+                        </a></li>
+                        <li><a class="social-link-menu" href="https://www.youtube.com/channel/UCnlEydEAT524F5ZMpSe_D6Q" target="_new">
+                            <img src="./media/Component 22 – 59.png" alt="YT">
+                        </a></li>
+                    </span>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Gdzieniegdzie <span class="title-2nd-word">online</span> WIP</h1>
+            <div class="video-box "> 
+                <div class="black-box" id="black_box"></div>
+                <video class="video-screen video-hidden" id="video_01" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_01.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_02" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_02.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_03" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_03.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_04" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_04.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_05" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_05.mp4" type="video/mp4">
+                </video>
+                <video class="video-screen video-hidden" id="video_06" preload="auto" loop>
+                    <source src="./media/GnG_P_III_Web_06.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-buttons">
+                <button onclick="playVid(vids[0])">1</button>
+                <button onclick="playVid(vids[1])">2</button>
+                <button onclick="playVid(vids[2])">3</button>
+                <button onclick="playVid(vids[3])">4</button>
+                <button onclick="playVid(vids[4])">5</button>
+                <button onclick="playVid(vids[5])">6</button>
+                <button>7</button>
+                <button onclick="stopVid()">II</button>
+                <button onclick="continueVid()">></button>
+            </div>
+        </main>
+        <img src="./media/Group 147.png" alt="logo OMN" class="logo-OMN">
+        <div class="contact-info-box">
+            <div class="info-top">
+                ORKIESTRA MUZYKI NOWEJ <span>copyright &#174; 2020</span>
+            </div>
+            <span class="info-contact">
+                <ul>
+                    <li>
+                        ul. Jana Matejki 18/2, 41-902 Bytom
+                    </li>
+                    <li>
+                        NIP 6263011978
+                    </li>
+                    <li>
+                        KRS 0000452211
+                    </li>
+                </ul>
+            </span>
+            <span class="info-contact">
+                <ul>
+                    <li>
+                       <u>www.omn.art.pl</u>
+                    </li>
+                    <li>
+                        telefon +48 601 401 224
+                    </li>
+                    <li>
+                        mail: omn@art.pl
+                    </li>
+                </ul>
+            </span>
+            <span class="project-author">
+                Projekt graficzny: Tomasz Strojecki / tstrojecki.pl
+            </span>
+        </div>
+    </div>
+    <footer>
+        <div class="partners">
+            <div>
+                <img src="./media/logo nck.png" alt="Narodowe centrum kultury" class="logo-NCK">
+            </div>
+            <div>
+                <img src="./media/pic61.jpg" alt="Dofinansowane ze środków Narodowego Centrum Kultury w ramach programu Kultura w sieci">
+            </div>
+            <div>
+                <img src="./media/Group 133.png" alt="Ministerstwo Kulturu i Dziedzictwa Narodowego">
+            </div>
+            <div>
+                <img src="./media/nospr11a.png" alt="NOSPR">
+            </div>
+            <div>
+                <img src="./media/Group 134.png" alt="Instytut muzyki i tańca">
+            </div>
+        </div>
+    </footer>
+    <script src="video_app.js"></script>
+</body>
+</html>
