@@ -183,6 +183,10 @@ main {
   border-color: greenyellow;
 }
 
+.video-buttons > button:hover:nth-child(7) {
+  border-color: rgb(186, 59, 218);
+}
+
 .logo-OMN {
   display: inline-block;
   min-height: 78px;
