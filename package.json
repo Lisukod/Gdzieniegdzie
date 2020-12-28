@@ -1,0 +1,22 @@
+{
+  "name": "gdzieniegdzie",
+  "version": "1.0.0",
+  "description": "Pierwszy projekt internetowego ogrodu kultury",
+  "main": "video_app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisukod/Gdzieniegdzie.git"
+  },
+  "author": "Krzysztof Śliwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lisukod/Gdzieniegdzie/issues"
+  },
+  "homepage": "https://github.com/Lisukod/Gdzieniegdzie#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
