@@ -23,10 +23,6 @@ a:link, a:visited, a:hover, a:active {
   color: white;
 }
 
-video{
-  object-fit: cover;
-}
-
 .outer-container {
   padding: 20px 60px;
 }
@@ -101,41 +97,29 @@ main {
   font-style: normal;
 }
 
+video{
+  object-fit: cover;
+}
+
 .video-box {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin: 0 auto;
-  width: 95vh;
+  overflow: hidden;
 }
 
 .video-screen {
-  display: block;
-  margin: 0 auto;
   margin-bottom: 2rem;
-  transform: translateX(-24%);
-  /* max-width: 100%; */
-}
-
-@media screen and (max-width: 1480px) {
-  .video-screen {
-    width: 180%;
-    transform: translateX(-20%);
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .video-screen {
-    width: 160%;
-    transform: translateX(-20%);
-  }
 }
 
 .black-box {
   background-color: black;
   height: 480px;
-  width: 1724px;
+  max-width: 1724px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
-  transform: translateX(-24%);
 }
 
 .video-hidden {
