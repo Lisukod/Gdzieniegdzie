@@ -29,7 +29,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .outer-container {
-  padding: 20px 60px;
+  padding: 10px 60px;
 }
 
 header {
@@ -56,41 +56,19 @@ header {
 }
 
 .menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
 }
 
-.menu > ul > li {
-  display: inline;
-  line-height: 1.7;
-  margin-left: 2.5rem;
-}
-
-.menu > ul > li {
-  display: inline;
-  line-height: 1.7;
-  margin-left: 2.5rem;
-}
-
 .menu a:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-}
-
-.social-links-menu > li {
-  display: inline;
-  line-height: 1.7;
-  margin-left: 2.5rem;
-}
-
-.social-links-menu {
-  margin-left: 1rem;
-  display: inline-block;
-}
-
-.social-links-menu > li:nth-child(2) {
-  margin-left: 1rem;
 }
 
 main {
@@ -235,11 +213,12 @@ footer {
 footer .partners {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 footer .partners > div {
+  /* margin-right: 10px; */
   cursor: pointer;
 }
 
@@ -264,7 +243,7 @@ footer .partners > div {
 
 @media screen and (max-width: 700px) {
   .menu{
-    display: none;
+    flex-wrap: wrap;
   }
 }
 
