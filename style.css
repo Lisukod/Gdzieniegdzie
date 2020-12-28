@@ -23,6 +23,9 @@ a:link, a:visited, a:hover, a:active {
   color: white;
 }
 
+video{
+  object-fit: cover;
+}
 
 .outer-container {
   padding: 20px 60px;
