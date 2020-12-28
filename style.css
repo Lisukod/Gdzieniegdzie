@@ -70,6 +70,10 @@ header {
 
 }
 
+.menu > span > a {
+  margin-right: 10px;
+}
+
 main {
   margin: 0 auto;
   margin-top: 9vh;
