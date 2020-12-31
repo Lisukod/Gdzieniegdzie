@@ -85,7 +85,9 @@ main {
 }
 
 video{
-  object-fit: cover;
+  max-width: 1567px;
+  width: 100%;
+  height: auto;
 }
 
 .video-box {
@@ -159,6 +161,38 @@ video{
 
 .video-buttons > button:hover:nth-child(7) {
   border-color: rgb(186, 59, 218);
+}
+
+.video-buttons > button:hover:nth-child(8) {
+  border-color: lime;
+}
+
+.video-buttons > button:hover:nth-child(9) {
+  border-color: darkgoldenrod;
+}
+
+.video-buttons > button:hover:nth-child(10) {
+  border-color: lightsalmon;
+}
+
+.video-buttons > button:hover:nth-child(11) {
+  border-color: mediumturquoise;
+}
+
+.video-buttons > button:hover:nth-child(12) {
+  border-color: orangered;
+}
+
+.video-buttons > button:hover:nth-child(13) {
+  border-color: olivedrab;
+}
+
+.video-buttons > button:hover:nth-child(14) {
+  border-color: rgb(218, 215, 59);
+}
+
+.video-buttons > button:hover:nth-child(15) {
+  border-color: rgb(167, 26, 73);
 }
 
 .logo-OMN {
