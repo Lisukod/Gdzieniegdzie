@@ -5,7 +5,14 @@ const vids = [
     document.getElementById("video_04"),
     document.getElementById("video_05"),
     document.getElementById("video_06"),
-    // document.getElementById("video_07")
+    document.getElementById("video_07"),
+    document.getElementById("video_08"),
+    document.getElementById("video_09"),
+    document.getElementById("video_10"),
+    document.getElementById("video_11"),
+    document.getElementById("video_12"),
+    document.getElementById("video_13"),
+    document.getElementById("video_14")
 ]
 
 let now_playing

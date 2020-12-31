@@ -118,7 +118,7 @@ video{
   width: 100%;
 }
 
-.video-buttons > button {
+.video-buttons button {
   height: 3.5rem;
   width: 3.5rem;
   background: none;
@@ -129,7 +129,7 @@ video{
   margin: .3rem 0 0 .1rem;
 }
 
-.video-buttons > button:hover {
+.video-buttons button:hover {
   border-width: 2px;
 }
 
