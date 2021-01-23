@@ -195,6 +195,24 @@ video{
   border-color: rgb(167, 26, 73);
 }
 
+.progress-bar {
+  margin: 3rem auto;
+  border: solid darkgrey 1px;
+  width: 80%;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.progress-bar > div {
+  display: inline-block;
+  width: 20rem;
+  height: 100%;
+  border-left: solid darkgrey 1px;
+}
+
+
 .logo-OMN {
   display: inline-block;
   min-height: 78px;
