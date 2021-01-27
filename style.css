@@ -206,6 +206,10 @@ video{
   white-space: nowrap;
 }
 
+.progress-bar::-webkit-scrollbar:vertical{
+  display: none;
+}
+
 .progress-bar::-webkit-scrollbar-track
 {
 	background-color: transparent;
