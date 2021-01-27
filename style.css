@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+
 body {
   margin: auto;
   background-color: navy;
   background-image: linear-gradient(170deg, #580055, #12024E);
   min-height: 100vh;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul{
@@ -197,19 +200,76 @@ video{
 
 .progress-bar {
   margin: 3rem auto;
-  border: solid darkgrey 1px;
   width: 80%;
-  height: 100px;
-  overflow-y: hidden;
+  height: 10rem;
   overflow-x: auto;
   white-space: nowrap;
 }
 
-.progress-bar > div {
+.progress-bar::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+.progress-bar::-webkit-scrollbar
+{
+	width: 6px;
+  background: transparent;
+  border: 1px darkgray solid;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+.progress-bar::-webkit-scrollbar-thumb
+{
+  background-color: #C59AF0;
+  border-radius: 10px;
+}
+
+
+.time-stamps {
   display: inline-block;
-  width: 20rem;
-  height: 100%;
-  border-left: solid darkgrey 1px;
+  width: 150px;
+  height: 25%;
+  margin-right: -5px;
+  border: 1px solid transparent;
+  transform: translateX(-10%);
+}
+
+.time-stamps:first-child {
+  transform: translateX(1%);
+}
+
+.time-stamp-last {
+  margin-right: 0;
+  transform: translateX(0);
+}
+
+.time-stamps > span {
+  float: right;
+}
+
+/* .control-outlet-box {
+  border: 1px solid darkgray;
+} */
+
+.control-outlet {
+  display: inline-block;
+  width: 150px;
+  height: 70%;
+  /* border-left: 1px solid darkgrey; */
+  margin-right: -4px;
+  border: 1px solid darkgrey;
+  border-right: 0px;
+}
+
+.first-outlet {
+  border-radius: 10px 0 0 10px;
+}
+
+.last-outlet {
+  border: 1px solid darkgrey;
+  border-radius: 0 10px 10px 0;
 }
 
 
@@ -225,13 +285,13 @@ video{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  font-weight: 500;
 }
 
 .contact-info-box {
   margin-top: 7.5rem;
   width: 70%;
 }
-
 
 .info-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -258,6 +318,7 @@ video{
   float: right;
   margin-top: .6rem;
   font-size: .9rem;
+  font-weight: 500;
 }
 
 footer {
