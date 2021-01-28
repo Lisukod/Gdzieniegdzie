@@ -220,8 +220,9 @@ video{
 {
 	width: 6px;
   background: transparent;
-  border: 1px darkgray solid;
-  border-radius: 10px;
+  border: 2px darkgray solid;
+  border-top: 2px solid rgba(169, 169, 169, 0);
+  border-radius: 0 0 10px 10px;
   margin-top: -10px;
 }
 
@@ -234,7 +235,7 @@ video{
 
 .time-stamps {
   display: inline-block;
-  width: 150px;
+  width: 149px;
   height: 25%;
   margin-right: -5px;
   border: 1px solid transparent;
@@ -247,7 +248,7 @@ video{
 
 .time-stamp-last {
   margin-right: 0;
-  transform: translateX(0);
+  transform: translateX(11px);
 }
 
 .time-stamps > span {
@@ -261,47 +262,69 @@ video{
 
 .test-point-box {
   position: relative;;
-  top: -78px;
+  /* top: -78px; */
 }
 
 .point-container {
-  display: flex;
+  position: absolute;
+  width: 100%;
+  left: -9001px;
+  top: -60px;
 }
 /* 150px == 10sec
   Przycisk ma łącznie 10px na ramkę zatem potrzebuje 140px na 10sec
 */
 .test-point {
-  display: flex;
+  display: inline-block;
   width: 140px;
   height: 40px;
   border: 5px solid red;
   border-radius: 20px;
-  margin-left: 1px;
-
+  margin-right: -4px;
+  z-index: 1;
 }
 
-.test-point>button {
+.element-control-buttons{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 40px;
+  filter: opacity(0);
+}
+
+.element-control-buttons:hover {
+  filter: opacity(100%);
+}
+
+.element-control-buttons>button {
   margin: auto;
 }
 
 .control-outlet {
   display: inline-block;
-  width: 150px;
+  width: 149px;
   height: 70%;
-  /* border-left: 1px solid darkgrey; */
   margin-right: -4px;
-  border: 1px solid darkgrey;
+  border: 2px solid darkgrey;
+  border-left: 1px solid rgba(169, 169, 169, 0.56);
   border-right: 0px;
+  border-bottom-color: rgba(169, 169, 169, 0.56);
   z-index: -1;
 }
 
 .first-outlet {
-  border-radius: 10px 0 0 10px;
+  border: 2px solid darkgrey;
+  border-right: 0px;
+  border-radius: 10px 0 0 0px;
+  border-bottom-color: rgba(169, 169, 169, 0.56);
+
 }
 
 .last-outlet {
-  border: 1px solid darkgrey;
-  border-radius: 0 10px 10px 0;
+  border: 2px solid darkgrey;
+  border-left: 1px solid rgba(169, 169, 169, 0.56);
+  border-radius: 0 10px 0px 0;
+  border-bottom-color: rgba(169, 169, 169, 0.56);
+
 }
 
 
