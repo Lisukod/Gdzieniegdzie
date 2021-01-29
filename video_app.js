@@ -90,3 +90,70 @@ function continueVid() {
         now_playing.play()
     }
 }
+
+//Progres bar
+
+const vid_in_loop = [];
+var loop_counter = 0 
+
+function addVidToBar(sent_vid, vid_num) {
+    loop_counter++;
+    vid_in_loop.push(sent_vid);
+    const progressBar = document.getElementById('point_container') 
+
+    const newSongDiv = document.createElement("div");
+    newSongDiv.setAttribute('class','test-point vid-num-' + vid_num);
+    newSongDiv.setAttribute('id', loop_counter);
+    progressBar.appendChild(newSongDiv);
+
+    const newSongSpan = document.createElement('span');
+    newSongSpan.setAttribute('class', 'element-control-buttons')
+    newSongDiv.appendChild(newSongSpan);
+
+    const backButton = document.createElement('button');
+    const deleteButton = document.createElement('button');
+    const forwardButton = document.createElement('button');
+
+    backButton.setAttribute('onClick', 'moveBack(this.parentNode.parentNode);')
+    deleteButton.setAttribute('onClick', 'removeFromBar(this.parentNode.parentNode);')
+    forwardButton.setAttribute('onClick', 'moveFurther(this.parentNode.parentNode);')
+    
+    backButton.innerHTML = '<';
+    deleteButton.innerHTML = 'X';
+    forwardButton.innerHTML = '>';
+    
+    newSongSpan.appendChild(backButton);
+    newSongSpan.appendChild(deleteButton);
+    newSongSpan.appendChild(forwardButton);
+}
+
+function removeFromBar(elem) {
+    const elem_id = elem.id;
+    let next_sibling = elem.nextElementSibling;
+    while(next_sibling != null){
+        next_sibling.id = Number(next_sibling.id) -1;
+        next_sibling = next_sibling.nextElementSibling;
+    }
+    elem.remove();
+    loop_counter--;
+}
+
+function moveFurther(elem) {
+    const elem_id = elem.id;
+    let next_sibling = elem.nextElementSibling;
+    if(next_sibling == null)
+        return;
+    elem.parentNode.insertBefore(next_sibling, elem);
+    elem.id = Number(elem_id)++;
+    next_sibling.id = elem_id;
+}
+
+function moveBack(elem){
+    const elem_id = elem.id;
+    let previous_sibling = elem.previousSibling;
+    if(previous_sibling == null)
+        return;
+    elem.parentNode.insertBefore(elem, previous_sibling);
+    elem.id = Number(elem_id)--;
+    previous_sibling.id = elem_id;
+}

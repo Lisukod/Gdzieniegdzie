@@ -80,21 +80,22 @@
                 </video>
             </div>
             <div class="video-buttons">
-                <button onclick="playVid(vids[0])">1</button>
-                <button onclick="playVid(vids[1])">2</button>
-                <button onclick="playVid(vids[2])">3</button>
-                <button onclick="playVid(vids[3])">4</button>
-                <button onclick="playVid(vids[4])">5</button>
-                <button onclick="playVid(vids[5])">6</button>
-                <button onclick="playVid(vids[6])">7</button>
-                <button onclick="playVid(vids[7])">8</button>
-                <button onclick="playVid(vids[8])">9</button><br>
-                <button onclick="playVid(vids[9])">10</button>
-                <button onclick="playVid(vids[10])">11</button>
-                <button onclick="playVid(vids[11])">12</button>
-                <button onclick="playVid(vids[12])">13</button>
-                <button onclick="playVid(vids[13])">14</button><br>
+                <button onclick="addVidToBar(vids[0], '1')">1</button>
+                <button onclick="addVidToBar(vids[1], '2');">2</button>
+                <button onclick="addVidToBar(vids[2], '3');">3</button>
+                <button onclick="addVidToBar(vids[3], '4');">4</button>
+                <button onclick="addVidToBar(vids[4], '5');">5</button>
+                <button onclick="addVidToBar(vids[5], '6');">6</button>
+                <button onclick="addVidToBar(vids[6], '7');">7</button>
+                <button onclick="addVidToBar(vids[7], '8');">8</button>
+                <button onclick="addVidToBar(vids[8], '9');">9</button><br>
+                <button onclick="addVidToBar(vids[9], '10');">10</button>
+                <button onclick="addVidToBar(vids[10], '11');">11</button>
+                <button onclick="addVidToBar(vids[11], '12');">12</button>
+                <button onclick="addVidToBar(vids[12], '13');">13</button>
+                <button onclick="addVidToBar(vids[13], '14');">14</button><br>
                 <span>
+                    <button>T</button>
                     <button onclick="stopVid()">II</button>
                     <button onclick="continueVid()">></button>
                 </span>
@@ -226,36 +227,14 @@
                     <div class="control-outlet last-outlet"></div>
                 </span>
                 <span class="test-point-box">
-                    <span class="point-container">
-                        <div class="test-point">
+                    <span class="point-container" id="point_container">
+                        <!-- <div class="test-point">
                             <span class="element-control-buttons">
-                                <button><</button>
+                                <button onClick="this.parentNode.parentNode.remove()"><</button>
                                 <button>X</button>
                                 <button>></button>
                             </span>
-                        </div>
-                        <div class="test-point">
-                            <span class="element-control-buttons">
-                                <button><</button>
-                                <button>X</button>
-                                <button>></button>
-                            </span>
-                        </div>
-                        <div class="test-point">
-                            <span class="element-control-buttons">
-                                <button><</button>
-                                <button>X</button>
-                                <button>></button>
-                            </span>
-                        </div>
-                        <div class="test-point">
-                            <span class="element-control-buttons">
-                                <button><</button>
-                                <button>X</button>
-                                <button>></button>
-                            </span>
-                        </div>
-                        
+                        </div> -->
                     </span>
                 </span>
             </div>

@@ -174,27 +174,79 @@ video{
   border-color: darkgoldenrod;
 }
 
-.video-buttons > button:hover:nth-child(10) {
+.video-buttons > button:hover:nth-child(11) {
   border-color: lightsalmon;
 }
 
-.video-buttons > button:hover:nth-child(11) {
+.video-buttons > button:hover:nth-child(12) {
   border-color: mediumturquoise;
 }
 
-.video-buttons > button:hover:nth-child(12) {
+.video-buttons > button:hover:nth-child(13) {
   border-color: orangered;
 }
 
-.video-buttons > button:hover:nth-child(13) {
+.video-buttons > button:hover:nth-child(14) {
   border-color: olivedrab;
 }
 
-.video-buttons > button:hover:nth-child(14) {
-  border-color: rgb(218, 215, 59);
+.video-buttons > button:hover:nth-child(15) {
+  border-color: rgb(167, 26, 73);
 }
 
-.video-buttons > button:hover:nth-child(15) {
+.vid-num-1 {
+  border-color: purple;
+}
+
+.vid-num-2 {
+  border-color: green;
+}
+
+.vid-num-3 {
+  border-color: red;
+}
+
+.vid-num-4 {
+  border-color: yellow;
+}
+
+.vid-num-5 {
+  border-color: blue;
+}
+
+.vid-num-6 {
+  border-color: greenyellow;
+}
+
+.vid-num-7 {
+  border-color: rgb(186, 59, 218);
+}
+
+.vid-num-8 {
+  border-color: lime;
+}
+
+.vid-num-9 {
+  border-color: darkgoldenrod;
+}
+
+.vid-num-10 {
+  border-color: lightsalmon;
+}
+
+.vid-num-11 {
+  border-color: mediumturquoise;
+}
+
+.vid-num-12 {
+  border-color: orangered;
+}
+
+.vid-num-13 {
+  border-color: olivedrab;
+}
+
+.vid-num-14 {
   border-color: rgb(167, 26, 73);
 }
 
@@ -271,6 +323,10 @@ video{
   left: -9001px;
   top: -60px;
 }
+
+.point-container:first-child {
+  margin-left: 1px;
+}
 /* 150px == 10sec
   Przycisk ma łącznie 10px na ramkę zatem potrzebuje 140px na 10sec
 */
@@ -278,9 +334,9 @@ video{
   display: inline-block;
   width: 140px;
   height: 40px;
-  border: 5px solid red;
+  border-width: 5px;
+  border-style: solid;
   border-radius: 20px;
-  margin-right: -4px;
   z-index: 1;
 }
 
