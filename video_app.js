@@ -17,6 +17,8 @@ const vids = [
 
 let now_playing
 let vids_loaded = false
+const vid_in_queue = [];
+var loop_counter = 0;
 
 function isLoaded() {
     let videoLoad = setInterval(
@@ -91,14 +93,24 @@ function continueVid() {
     }
 }
 
+
+function playQueue() {
+    let queued_vid_counter = 0;
+    let now_playing = queued_vid;
+    playVid(now_playing);
+    now_playing.addEventListener('ended', myHandler());
+    function myHandler() {
+        queued_vid_counter++;
+        playVid(vid_in_queue[queued_vid_counter])
+    }
+}
+ 
 //Progres bar
 
-const vid_in_loop = [];
-var loop_counter = 0 
 
 function addVidToBar(sent_vid, vid_num) {
     loop_counter++;
-    vid_in_loop.push(sent_vid);
+    vid_in_queue.push(sent_vid);
     const progressBar = document.getElementById('point_container') 
 
     const newSongDiv = document.createElement("div");

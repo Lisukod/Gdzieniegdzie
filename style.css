@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
 
+:root{
+  --progres_bar_width: 15px;
+}
+
 body {
   margin: auto;
   background-color: navy;
@@ -194,60 +198,74 @@ video{
   border-color: rgb(167, 26, 73);
 }
 
-.vid-num-1 {
+.vid-num-01 {
   border-color: purple;
+  width: calc(var(--progres_bar_width) * 33 - 10px);
 }
 
-.vid-num-2 {
+.vid-num-02 {
   border-color: green;
+  width: calc(var(--progres_bar_width) * 26 - 10px);
 }
 
-.vid-num-3 {
+.vid-num-03 {
   border-color: red;
+  width: calc(var(--progres_bar_width) * 30 - 10px);
 }
 
-.vid-num-4 {
+.vid-num-04 {
   border-color: yellow;
+  width: calc(var(--progres_bar_width) * 24 - 10px);
 }
 
-.vid-num-5 {
+.vid-num-05 {
   border-color: blue;
+  width: calc(var(--progres_bar_width) * 17 - 10px);
 }
 
-.vid-num-6 {
+.vid-num-06 {
   border-color: greenyellow;
+  width: calc(var(--progres_bar_width) * 22 - 10px);
 }
 
-.vid-num-7 {
+.vid-num-07 {
   border-color: rgb(186, 59, 218);
+  width: calc(var(--progres_bar_width) * 25 - 10px);
 }
 
-.vid-num-8 {
+.vid-num-08 {
   border-color: lime;
+  width: calc(var(--progres_bar_width) * 14 - 10px);
 }
 
-.vid-num-9 {
+.vid-num-09 {
   border-color: darkgoldenrod;
+  width: calc(var(--progres_bar_width) * 20 - 10px);
 }
 
 .vid-num-10 {
   border-color: lightsalmon;
+  width: calc(var(--progres_bar_width) * 12 - 10px);
 }
 
 .vid-num-11 {
   border-color: mediumturquoise;
+  width: calc(var(--progres_bar_width) * 15 - 10px);
 }
 
 .vid-num-12 {
   border-color: orangered;
+  width: calc(var(--progres_bar_width) * 13 - 10px);
 }
 
 .vid-num-13 {
   border-color: olivedrab;
+  width: calc(var(--progres_bar_width) * 21 - 10px);
 }
 
 .vid-num-14 {
   border-color: rgb(167, 26, 73);
+  width: calc(var(--progres_bar_width) * 10 - 10px);
 }
 
 .progress-bar {
@@ -332,13 +350,14 @@ video{
 */
 .test-point {
   display: inline-block;
-  width: 140px;
+  /* width: 140px; */
   height: 40px;
   border-width: 5px;
   border-style: solid;
   border-radius: 20px;
   z-index: 1;
 }
+
 
 .element-control-buttons{
   display: flex;
@@ -349,6 +368,14 @@ video{
 
 .element-control-buttons:hover {
   filter: opacity(100%);
+}
+
+.test-point:first-child > .element-control-buttons > button:first-child { 
+  filter: opacity(0);
+}
+
+.test-point:last-child > .element-control-buttons > button:last-child { 
+  filter: opacity(0);
 }
 
 .element-control-buttons>button {
