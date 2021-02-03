@@ -50,6 +50,7 @@ function stopQueue() {
     now_playing = undefined;
     queueCounter = 0;
     document.getElementById("black_box").classList.remove("video-hidden");
+    document.getElementById("play_button").setAttribute("onclick", "playQueue()");
 }
 
 function playQueue() {
@@ -57,11 +58,61 @@ function playQueue() {
     if(vid_queue[queueCounter] == undefined){
         now_playing.removeEventListener('ended', playQueue);
         stopQueue();
+        return;
     };
     playVid(vid_queue[queueCounter]);
     queueCounter++;
     now_playing.addEventListener('ended', playQueue)
+    document.getElementById("play_button").setAttribute("onclick", "none");
 }
+
+//KeyDownListener
+document.addEventListener('keydown', event => {
+    switch (event.key) {
+        case '1':
+            addVidToBar(vids[0], '01');
+            break;
+        case '2':
+            addVidToBar(vids[1], '02');
+            break;
+        case '3':
+            addVidToBar(vids[2], '03');
+            break;
+        case '4':
+            addVidToBar(vids[3], '04');
+            break;
+        case '5':
+            addVidToBar(vids[4], '05');
+            break;
+        case '6':
+            addVidToBar(vids[5], '06');
+            break;
+        case '7':
+            addVidToBar(vids[6], '07');
+            break;
+        case '8':
+            addVidToBar(vids[7], '08');
+            break;
+        case '9':
+            addVidToBar(vids[8], '09');
+            break;
+        case 'q':
+            addVidToBar(vids[9], '10');
+            break;
+        case 'w':
+            addVidToBar(vids[10], '11');
+            break;
+        case 'e':
+            addVidToBar(vids[11], '12');
+            break;
+        case 'r':
+            addVidToBar(vids[12], '13');
+            break;
+        case 't':
+            addVidToBar(vids[13], '14');
+            break;      
+    }
+})
 
 //Progres bar
 

@@ -277,7 +277,7 @@ video{
 
 .video-control-buttons { 
   display: flex;
-  margin: 80px auto;
+  margin: 50px auto;
   justify-content: space-around;
   align-items: center;
   max-width: 200px;
@@ -324,7 +324,6 @@ video{
   background-color: #C59AF0;
   border-radius: 10px;
 }
-
 
 .time-stamps {
   display: inline-block;
