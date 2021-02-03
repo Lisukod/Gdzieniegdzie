@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Gdzieniegdzie</title>
 </head>
-span
 <body>
     <div class="outer-container">
         <header>
@@ -90,17 +89,28 @@ span
                 <button onclick="addVidToBar(vids[5], '06');">6</button>
                 <button onclick="addVidToBar(vids[6], '07');">7</button>
                 <button onclick="addVidToBar(vids[7], '08');">8</button>
-                <button onclick="addVidToBar(vids[8], '09');">9</button><br>
-                <button onclick="addVidToBar(vids[9], '10');">10</button>
-                <button onclick="addVidToBar(vids[10], '11');">11</button>
-                <button onclick="addVidToBar(vids[11], '12');">12</button>
-                <button onclick="addVidToBar(vids[12], '13');">13</button>
-                <button onclick="addVidToBar(vids[13], '14');">14</button><br>
+                <button onclick="addVidToBar(vids[8], '09');">9</button>
                 <span>
-                    <button>T</button>
-                    <button onclick="stopVid()" id="pause_button">II</button>
-                    <button onclick="playQueue()" id="play_button">></button>
+                    <button onclick="addVidToBar(vids[9], '10');">Q</button>
+                    <button onclick="addVidToBar(vids[10], '11');">W</button>
+                    <button onclick="addVidToBar(vids[11], '12');">E</button>
+                    <button onclick="addVidToBar(vids[12], '13');">R</button>
+                    <button onclick="addVidToBar(vids[13], '14');">T</button>
                 </span>
+                <div class="video-control-buttons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="31" viewBox="0 0 27 31" onclick="playQueue()" id="play_button">
+                        <path id="Polygon_2" data-name="Polygon 2" d="M15.5,0,31,27H0Z" transform="translate(27) rotate(90)" fill="#fff"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" onclick="pauseVid()" id="pause_button">
+                        <g id="Group_222" data-name="Group 222" transform="translate(-932 -1070)">
+                          <rect id="Rectangle_118" data-name="Rectangle 118" width="12" height="31" transform="translate(932 1070)" fill="#fff"/>
+                          <rect id="Rectangle_119" data-name="Rectangle 119" width="12" height="31" transform="translate(951 1070)" fill="#fff"/>
+                        </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" class="stop-video-button" onclick = "stopQueue()">
+                        <rect id="Rectangle_120" data-name="Rectangle 120" width="32" height="31" fill="#fff"/>
+                      </svg>
+                </div>
             </div>
             <div class="progress-bar">
                 <div class="time-stamps">0:00:00</div>
@@ -230,13 +240,6 @@ span
                 </span>
                 <span class="test-point-box">
                     <span class="point-container" id="point_container">
-                        <!-- <div class="test-point">
-                            <span class="element-control-buttons">
-                                <button onClick="this.parentNode.parentNode.remove()"><</button>
-                                <button>X</button>
-                                <button>></button>
-                            </span>
-            </div> -->
             </span>
             </span>
     </div>

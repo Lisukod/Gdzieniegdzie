@@ -111,8 +111,9 @@ video{
 
 .black-box {
   background-color: black;
-  height: 480px;
-  max-width: 1724px;
+  height: 440px;
+  max-width: 1567px;
+  /* max-width: 1724px; */
   width: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -125,7 +126,13 @@ video{
 .video-buttons {
   text-align: center;
   width: 100%;
+  margin: auto;
 }
+
+.video-buttons > span {
+  display: block;
+  transform: translateX(25px);
+} 
 
 .video-buttons button {
   height: 3.5rem;
@@ -135,7 +142,7 @@ video{
   border-radius: 25%;
   color: white;
   font-size: 23px;
-  margin: .3rem 0 0 .1rem;
+  margin: .8rem 0 0 .5rem;
 }
 
 .video-buttons button:hover {
@@ -178,23 +185,23 @@ video{
   border-color: darkgoldenrod;
 }
 
-.video-buttons > button:hover:nth-child(11) {
+.video-buttons > span > button:hover:nth-child(1) {
   border-color: lightsalmon;
 }
 
-.video-buttons > button:hover:nth-child(12) {
+.video-buttons > span > button:hover:nth-child(2) {
   border-color: mediumturquoise;
 }
 
-.video-buttons > button:hover:nth-child(13) {
+.video-buttons > span > button:hover:nth-child(3) {
   border-color: orangered;
 }
 
-.video-buttons > button:hover:nth-child(14) {
+.video-buttons > span > button:hover:nth-child(4) {
   border-color: olivedrab;
 }
 
-.video-buttons > button:hover:nth-child(15) {
+.video-buttons > span > button:hover:nth-child(5) {
   border-color: rgb(167, 26, 73);
 }
 
@@ -266,6 +273,22 @@ video{
 .vid-num-14 {
   border-color: rgb(167, 26, 73);
   width: calc(var(--progres_bar_width) * 10 - 10px);
+}
+
+.video-control-buttons { 
+  display: flex;
+  margin: 80px auto;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 200px;
+}
+
+.video-control-buttons > svg{
+  opacity: 0.7;
+}
+
+.video-control-buttons > svg:hover{
+  opacity: 1;
 }
 
 .progress-bar {
@@ -380,6 +403,24 @@ video{
 
 .element-control-buttons>button {
   margin: auto;
+  width: 30px;
+  height: 30px;
+  background: url(media/deleteBtn.png) no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transform: translateY(5px);
+}
+
+.element-control-buttons>button:first-child {
+  background: url(media/backBtn.png) no-repeat;
+  transform: translateY(7px);
+}
+
+.element-control-buttons>button:last-child {
+  background: url(media/forwardBtn.png) no-repeat;
+  transform: translateY(7px);
 }
 
 .control-outlet {
