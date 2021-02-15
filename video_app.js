@@ -154,6 +154,7 @@ function removeFromBar(elem) {
     }
     elem.remove();
     loop_counter--;
+    stopQueue();
 }
 
 function moveFurther(elem) {
@@ -163,8 +164,7 @@ function moveFurther(elem) {
     elem.parentNode.insertBefore(next_sibling, elem);
     [vid_queue[Number(elem.id)-1], vid_queue[Number(next_sibling.id)-1]] = [vid_queue[Number(next_sibling.id)-1], vid_queue[Number(elem.id)-1]];
     [elem.id, next_sibling.id] = [next_sibling.id, elem.id];
-    // elem.id = Number(elem_id) ++;
-    // next_sibling.id = elem_id;
+    stopQueue();
 }
 
 function moveBack(elem) {
@@ -174,6 +174,5 @@ function moveBack(elem) {
     elem.parentNode.insertBefore(elem, previous_sibling);
     [vid_queue[Number(elem.id)-1], vid_queue[Number(previous_sibling.id)-1]] = [vid_queue[Number(previous_sibling.id)-1], vid_queue[Number(elem.id)-1]];
     [elem.id, previous_sibling.id] = [previous_sibling.id, elem.id];
-    // elem.id = Number(elem_id) --;
-    // previous_sibling.id = elem_id;
+    stopQueue();
 }

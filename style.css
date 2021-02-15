@@ -36,7 +36,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .outer-container {
-  padding: 10px 60px;
+  padding: 40px 60px;
 }
 
 header {
@@ -149,59 +149,59 @@ video{
   border-width: 2px;
 }
 
-.video-buttons > button:hover:nth-child(1) {
+.video-buttons > button:nth-child(1) {
   border-color: purple;
 }
 
-.video-buttons > button:hover:nth-child(2) {
+.video-buttons > button:nth-child(2) {
   border-color: green;
 }
 
-.video-buttons > button:hover:nth-child(3) {
+.video-buttons > button:nth-child(3) {
   border-color: red;
 }
 
-.video-buttons > button:hover:nth-child(4) {
+.video-buttons > button:nth-child(4) {
   border-color: yellow;
 }
 
-.video-buttons > button:hover:nth-child(5) {
+.video-buttons > button:nth-child(5) {
   border-color: blue;
 }
 
-.video-buttons > button:hover:nth-child(6) {
+.video-buttons > button:nth-child(6) {
   border-color: greenyellow;
 }
 
-.video-buttons > button:hover:nth-child(7) {
+.video-buttons > button:nth-child(7) {
   border-color: rgb(186, 59, 218);
 }
 
-.video-buttons > button:hover:nth-child(8) {
+.video-buttons > button:nth-child(8) {
   border-color: lime;
 }
 
-.video-buttons > button:hover:nth-child(9) {
+.video-buttons > button:nth-child(9) {
   border-color: darkgoldenrod;
 }
 
-.video-buttons > span > button:hover:nth-child(1) {
+.video-buttons > span > button:nth-child(1) {
   border-color: lightsalmon;
 }
 
-.video-buttons > span > button:hover:nth-child(2) {
+.video-buttons > span > button:nth-child(2) {
   border-color: mediumturquoise;
 }
 
-.video-buttons > span > button:hover:nth-child(3) {
+.video-buttons > span > button:nth-child(3) {
   border-color: orangered;
 }
 
-.video-buttons > span > button:hover:nth-child(4) {
+.video-buttons > span > button:nth-child(4) {
   border-color: olivedrab;
 }
 
-.video-buttons > span > button:hover:nth-child(5) {
+.video-buttons > span > button:nth-child(5) {
   border-color: rgb(167, 26, 73);
 }
 
