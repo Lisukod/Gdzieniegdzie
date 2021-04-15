@@ -12,7 +12,19 @@ const vids = [
     document.getElementById("video_11"),
     document.getElementById("video_12"),
     document.getElementById("video_13"),
-    document.getElementById("video_14")
+    document.getElementById("video_14"),
+    document.getElementById("video_15"),
+    document.getElementById("video_16"),
+    document.getElementById("video_17"),
+    document.getElementById("video_18"),
+    document.getElementById("video_19"),
+    document.getElementById("video_20"),
+    document.getElementById("video_21"),
+    document.getElementById("video_22"),
+    document.getElementById("video_23"),
+    document.getElementById("video_24"),
+    document.getElementById("video_25"),
+    document.getElementById("video_26")
 ]
 
 //Video app
@@ -110,7 +122,43 @@ document.addEventListener('keydown', event => {
             break;
         case 't':
             addVidToBar(vids[13], '14');
-            break;      
+            break;
+        case 'y':
+            addVidToBar(vids[14], '15');
+            break;
+        case 'a':
+            addVidToBar(vids[15], '16');
+            break;
+        case 's':
+            addVidToBar(vids[16], '17');
+            break;
+        case 'd':
+            addVidToBar(vids[17], '18');
+            break;
+        case 'f':
+            addVidToBar(vids[18], '19');
+            break;
+        case 'g':
+            addVidToBar(vids[19], '20');
+            break;
+        case 'h':
+            addVidToBar(vids[20], '21');
+            break;
+        case 'z':
+            addVidToBar(vids[21], '22');
+            break;
+        case 'x':
+            addVidToBar(vids[22], '23');
+            break;
+        case 'c':
+            addVidToBar(vids[23], '24');
+            break;
+        case 'v':
+            addVidToBar(vids[24], '25');
+            break;
+        case 'b':
+            addVidToBar(vids[25], '26');
+            break;
     }
 })
 
